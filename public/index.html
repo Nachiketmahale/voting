@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GR election |Government Polytechnic Mumbai</title>
+     <link rel="stylesheet" href="./index.css"> 
+    <style>
+        #Home{
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+            flex:1;
+        }
+        h1{
+            font-size: 2.2rem;
+            letter-spacing: 3px;
+            animation:typing 5s steps(1) 1;
+            animation-timing-function: cubic-bezier(.1,-0.31,.96,1.56);
+            overflow: hidden;
+            position:relative;
+        }
+        /* @keyframes typing {
+            0%{
+                width:0;
+                display: none;
+            }
+            50%{
+                width:300px;
+                display: block;
+            }
+            100%{
+                width:500px;
+            }
+        } */
+        p{
+            font-size:1.5rem;
+            letter-spacing: 2px;
+            margin-top: 1rem;
+            font-weight: bold;
+        }
+        h1,p{
+            text-align: center;
+        }
+        #navigation-info h6{
+            margin-top:2rem;
+        }
+        #navigation-info h6 a{
+            text-decoration: underline;
+            color:rgb(231, 231, 228);
+            font-size: 1rem;
+        }
+        #info-wrapper{
+            flex: 1;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+        }
+        #info-wrapper a{
+            text-decoration: none;
+            color:#eee;
+            margin-top:1.5rem;
+            border:2px solid #eee;
+            background: black;
+            border-radius: 50%;
+            padding:20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="content-wrapper">
+        <header>
+            <h1>Blockvote</h1>
+        </header>
+        <div id="info-wrapper">
+            <h1>Welcome To The Next Generation of Voting</h1>
+            <p>Based on Blockchain</p>
+            <a href="/VoterRegistration">Start Voting</a><span></span>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./web3.js"></script>
+    <script src="./truffle-contract.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GR election |Government Polytechnic Mumbai</title>
+    <link rel="stylesheet" href="./index.css">
+    <style>
+        #Voter_Registration{
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+        }
+        h3{
+            text-align: center;
+            margin-top: 1rem;
+        }
+        form{
+            display: flex;
+            flex-flow: column nowrap;
+            margin:2rem;
+        }
+        form button{
+            align-self: center;
+            margin-top: 2rem;
+            padding:10px 20px;
+            border-radius: 5px;
+            border:3px solid black;
+            font-size:1.1rem;
+            font-weight: bold;
+        }
+        .con{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 2rem;
+        }
+        .content{
+            flex:1;
+            margin-left:10px;
+        }
+        label{
+            font-weight: bold;
+        }
+        input{
+            padding:10px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        #content-wrapper{
+            background:rgb(128, 128, 128);
+        }
+        a{
+            text-decoration: underline;
+            color:#eee;
+        }
+    </style>
+</head>
+<body>
+    <div id="content-wrapper">
+        <header>
+            <div id="logo">
+                <h1>Voter Validation</h1>
+            </div>
+        </header>
+         <div id="Voter_Registration">
+            <div id="verifivation-wrapper">
+                <form action="/validate" method="POST">
+                    <!-- <div id="Adhar" class="con">
+                        <label for="Adhar_no" class="content">Aadhaar Number</label>
+                        <input type="number" placeholder="Enter AAdhar No" maxlength="12" id="adharnumber" class="content">
+                    </div> -->
+                    <div id="Voter" class="con">
+                        Adhar no
+                        <input type="text" placeholder="Enter Adhaar No" max="10" id="adhar" name="adhar" class="content">
+                    </div>
+                    <!-- <div id="email" class="con">
+                        <label for="email_address" class="content">Email id:</label>
+                        <input type="text" placeholder="Enter Email id" id="email_address" class="content">
+                    </div> -->
+                    <!-- <div id="mobile" class="con">
+                        <label for="mobile_no" class="content">Mobile no:</label>
+                        <input type="text" placeholder="Enter Mobile no" id="mobile_no" class="content">
+                    </div> -->
+                     <button type="submit">Validate</button>
+                </form>
+            </div>
+            
+        </div> 
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./web3.js"></script>
+    <script src="./truffle-contract.js"></script>
+    
+</body>
+</html>

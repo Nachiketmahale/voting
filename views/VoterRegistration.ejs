@@ -1,0 +1,35 @@
+<div id="content-wrapper">
+    <header>
+        <div id="logo">
+            <h1>Voter Validation</h1>
+        </div>
+    </header>
+     <div id="Voter_Registration">
+        <div id="verifivation-wrapper">
+            <form action="/validate" method="POST">
+                <!-- <div id="Adhar" class="con">
+                    <label for="Adhar_no" class="content">Aadhaar Number</label>
+                    <input type="number" placeholder="Enter AAdhar No" maxlength="12" id="adharnumber" class="content">
+                </div> -->
+                <div id="Voter" class="con">
+                    Adhar no
+                    <input type="text" placeholder="Enter Adhaar No" max="10" id="adhar" name="adhar" class="content">
+                </div>
+                <!-- <div id="email" class="con">
+                    <label for="email_address" class="content">Email id:</label>
+                    <input type="text" placeholder="Enter Email id" id="email_address" class="content">
+                </div> -->
+                <!-- <div id="mobile" class="con">
+                    <label for="mobile_no" class="content">Mobile no:</label>
+                    <input type="text" placeholder="Enter Mobile no" id="mobile_no" class="content">
+                </div> -->
+                <button type="submit">Validate</button>
+            </form>
+        </div>
+    </div> 
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./web3.js"></script>
+    <script src="./truffle-contract.js"></script>
