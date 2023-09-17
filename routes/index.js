@@ -34,11 +34,11 @@ router.post('/validate',(req,res)=>{
                 //getting email
                 const email=user.email;
                 //forming otp
-                const otp=Math.floor(Math.random()*101);
+                const otp=Math.floor(Math.random()*10000);
                 OTP=otp;
                 //sending mail
                 const sgMail=require('@sendgrid/mail')
-                const API_KEY="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"; 
+                const API_KEY="Key"; 
                 sgMail.setApiKey(API_KEY)
                 const messege={
                     to: email,
@@ -68,8 +68,6 @@ router.post('/check',(req,res)=>{
         res.redirect('/Voting');
     }
 })
-
-
 router.get('/Election.json', (req,res)=>{
     res.sendFile(path.join(__dirname,'../build/contracts/Election.json')) 
    }

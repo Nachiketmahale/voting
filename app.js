@@ -27,6 +27,6 @@ app.use('/',require('./routes/index'))
 
 //listening on port
 
-app.listen(3000,()=>{
+app.listen(4000,()=>{
     console.log("Server is up and running");
 })
